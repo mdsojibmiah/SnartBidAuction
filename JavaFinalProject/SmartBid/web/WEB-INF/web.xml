@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app version="3.0" xmlns="http://java.sun.com/xml/ns/javaee" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://java.sun.com/xml/ns/javaee                               http://java.sun.com/xml/ns/javaee/web-app_3_0.xsd">
+<welcome-file-list>
+    <welcome-file>index.jsp</welcome-file>
+</welcome-file-list>
+
+  <servlet>
+    <servlet-name>RegisterServlet</servlet-name>
+    <servlet-class>com.auction.controller.RegisterServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>RegisterServlet</servlet-name>
+    <url-pattern>/RegisterServlet</url-pattern>
+  </servlet-mapping>
+
+  <servlet>
+    <servlet-name>LoginServlet</servlet-name>
+    <servlet-class>com.auction.controller.LoginServlet</servlet-class>
+  </servlet>
+
+  <servlet-mapping>
+    <servlet-name>LoginServlet</servlet-name>
+    <url-pattern>/LoginServlet</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+  <servlet-name>AddProductServlet</servlet-name>
+  <servlet-class>com.auction.controller.AddProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>AddProductServlet</servlet-name>
+  <url-pattern>/AddProductServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+  <servlet-name>ApproveProductServlet</servlet-name>
+  <servlet-class>com.auction.controller.ApproveProductServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+  <servlet-name>ApproveProductServlet</servlet-name>
+  <url-pattern>/ApproveProductServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>PlaceBidServlet</servlet-name>
+    <servlet-class>com.auction.controller.PlaceBidServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>PlaceBidServlet</servlet-name>
+    <url-pattern>/PlaceBidServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>MyBidsServlet</servlet-name>
+    <servlet-class>com.auction.controller.MyBidsServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>MyBidsServlet</servlet-name>
+    <url-pattern>/MyBidsServlet</url-pattern>
+</servlet-mapping>
+
+
+<servlet>
+    <servlet-name>RechargeWalletServlet</servlet-name>
+    <servlet-class>com.auction.controller.RechargeWalletServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>RechargeWalletServlet</servlet-name>
+    <url-pattern>/RechargeWalletServlet</url-pattern>
+</servlet-mapping>
+
+
+
+<servlet>
+    <servlet-name>UpdateUserStatusServlet</servlet-name>
+    <servlet-class>com.auction.controller.UpdateUserStatusServlet</servlet-class>
+</servlet>
+
+<servlet-mapping>
+    <servlet-name>UpdateUserStatusServlet</servlet-name>
+    <url-pattern>/UpdateUserStatusServlet</url-pattern>
+</servlet-mapping>
+
+<servlet>
+    <servlet-name>WinnerDeclareServlet</servlet-name>
+    <servlet-class>com.auction.controller.WinnerDeclareServlet</servlet-class>
+</servlet>
+<servlet-mapping>
+    <servlet-name>WinnerDeclareServlet</servlet-name>
+    <url-pattern>/WinnerDeclareServlet</url-pattern>
+</servlet-mapping>
+
+
+
+
+
+</web-app>
